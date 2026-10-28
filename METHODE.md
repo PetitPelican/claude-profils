@@ -139,7 +139,7 @@ claude plugin install harnais@atelier
 ```
 
 Le programme `harnais` est livré dans le paquet, construit pour Mac et Windows.
-Le briefing d'un dossier sans mémoire donne son chemin exact. **Version 0.19
+Le briefing d'un dossier sans mémoire donne son chemin exact. **Version 0.19.4
 au moins** : `laissez-passer` et `demenage` n'existent pas avant.
 
 **Preuve** : `harnais version`, et `harnais laissez-passer --help` qui ne
@@ -469,10 +469,9 @@ Le réglage de chaque agent :
 }
 ```
 
-**Paquet 0.19.4 et après** : `harnais adopte --equipe` et `harnais equipe`
-posent ces deux lignes eux-mêmes, et ferment à QA sa propre copie du code.
-**Avant** (mesuré en 0.19.3) : ni le mode sans confirmation ni `Read(*)` ;
-les ajouter à la main.
+`harnais adopte --equipe` et `harnais equipe` posent ce réglage eux-mêmes, et
+ferment à QA sa propre copie du code (paquet 0.19.4 ou plus ; une équipe montée
+avant garde son ancien réglage, à compléter à la main).
 
 `Read(*)` ou le mode `bypassPermissions` suffit à lire hors de l'arbre de
 travail (mesuré sur Claude Code 2.1.311 ; sans l'un ni l'autre, la lecture est
