@@ -104,7 +104,7 @@ l'étape 3, on travaille depuis le dossier du CTO.
 
 ```bash
 mkdir -p ~/Agentic && cd ~/Agentic
-git clone https://github.com/<compte>/claude-harnais.git
+git clone https://github.com/<compte>/<dépôt du harnais>.git
 git clone https://github.com/<compte>/claude-starter.git
 git clone https://github.com/<compte>/claude-profils.git
 
@@ -134,7 +134,7 @@ existe (`ls ~/.claude-competences/<chemin>/SKILL.md`).
 ### Étape 2 — le paquet
 
 ```bash
-claude plugin marketplace add <compte>/claude-harnais
+claude plugin marketplace add <compte>/<dépôt du harnais>
 claude plugin install harnais@atelier
 ```
 
@@ -354,7 +354,7 @@ lancement**. Sept règles mesurées, qu'aucun message d'erreur ne rappelle :
 Partout : le paquet déclaré et activé —
 
 ```json
-"extraKnownMarketplaces": { "atelier": { "source": { "source": "github", "repo": "<compte>/claude-harnais" } } },
+"extraKnownMarketplaces": { "atelier": { "source": { "source": "github", "repo": "<compte>/<dépôt du harnais>" } } },
 "enabledPlugins": { "harnais@atelier": true }
 ```
 
@@ -541,7 +541,7 @@ ouvert dans son dossier, `claude -n "<Nom>" --remote-control "<Nom>"`.
 
 | Commande | Ce qu'elle fait |
 |---|---|
-| `claude plugin marketplace add <compte>/claude-harnais` | déclare le marché du paquet |
+| `claude plugin marketplace add <compte>/<dépôt du harnais>` | déclare le marché du paquet |
 | `claude plugin install harnais@atelier --scope project` | inscrit le dossier courant — **vérifier la portée** |
 | `claude plugin update harnais@atelier` | prend la dernière version (au prochain démarrage de chaque agent) |
 | `harnais atelier-monte --racine R --utilisateur P [--go]` | l'atelier et le CTO, une fois par machine |
