@@ -140,7 +140,8 @@ claude plugin install harnais@atelier
 
 Le programme `harnais` est livré dans le paquet, construit pour Mac et Windows.
 Le briefing d'un dossier sans mémoire donne son chemin exact. **Version 0.19.4
-au moins** : `laissez-passer` et `demenage` n'existent pas avant.
+au moins** : le périmètre type d'équipe arrive en 0.19.4, `laissez-passer` et
+`demenage` en 0.19.
 
 **Preuve** : `harnais version`, et `harnais laissez-passer --help` qui ne
 répond pas « sous-commande inconnue ».
