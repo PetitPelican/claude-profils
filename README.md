@@ -31,6 +31,7 @@ transverse, qui sert l'atelier ou plusieurs projets (`METHODE.md`, § 2).
 | [`comptable`](comptable.md) | Expert | comptabilité et fiscalité d'une société | Opus |
 | [`hacker`](hacker.md) | Expert | sécurité offensive, en lecture | Opus |
 | [`archi`](archi.md) | Expert | architecture des données : modèle, chemin, qualité, accès | Opus |
+| [`steward`](steward.md) | Expert | le regard extérieur sur un projet : cap, fondations, équipe, risques | Fable |
 
 ## Comment une fiche est faite
 
@@ -69,10 +70,10 @@ intégrale de chaque fiche, au plus 10 par profil.
 
 | Dépôt | Étoiles (14/10) | Licence | Profils |
 |---|---|---|---|
-| `obra/superpowers` | 299 k | MIT | ops, po, qa, dev, cto, harness |
-| `addyosmani/agent-skills` | 107 k | MIT | ops, po, qa, dev, hacker, cto, harness |
+| `obra/superpowers` | 299 k | MIT | ops, po, qa, dev, cto, harness, steward |
+| `addyosmani/agent-skills` | 107 k | MIT | ops, po, qa, dev, hacker, cto, harness, steward |
 | `wshobson/agents` | 41 k | MIT | ops, hacker, archi |
-| `anthropics/knowledge-work-plugins` | 30 k | Apache-2.0 | po, dev, archi |
+| `anthropics/knowledge-work-plugins` | 30 k | Apache-2.0 | po, dev, archi, steward |
 | `ancoleman/ai-design-components` | 525 (27/10) | MIT | archi (`architecting-data` seule ; dernier envoi le 10/12/2025) |
 | `trailofbits/skills` | 7,5 k | CC-BY-SA-4.0 | hacker |
 | `coreyhaines31/marketingskills` | 55 k | MIT | designer |

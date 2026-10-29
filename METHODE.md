@@ -74,7 +74,7 @@ mais un développeur par sa mémoire** (il code le paquet) : pas de variable.
    leurs ressources) et les communs ; Harness tient le paquet que chargent tous
    les agents. **Le CTO s'occupe des agents, jamais de leur projet** : une
    question de produit qu'on lui adresse repart vers l'humain.
-2. **Les métiers avec session — Designer, Juriste, Comptable, Hacker.** Un
+2. **Les métiers avec session — Designer, Juriste, Comptable, Hacker, Steward.** Un
    agent complet, avec sa mémoire, qui sert plusieurs projets.
 3. **Les métiers sans session** — un rôle et un fil dans le projet, convoqués
    en sous-agent à la demande : aucun coût au repos (§ 4.3). À préférer quand
@@ -285,6 +285,7 @@ donne les noms exacts.
 | un contrat, des CGU, une conformité | **Juriste** |
 | une écriture, une déclaration, une facture | **Comptable** |
 | une faille, une revue de sécurité | **Hacker** |
+| un avis d'ensemble sur un projet, un recadrage | **Steward** — l'humain l'ouvre ; il ne répond qu'à lui |
 | une décision de produit, un arbitrage, une priorité | **l'humain** — jamais un expert |
 
 **Un message d'un DEV à un expert** est autoportant, puisque l'expert n'a pas
