@@ -31,6 +31,8 @@ code.
   montrent existe, à quel grain, et si elle dit vrai.
 - **QA** vérifie qu'un lot fait ce qu'il annonce : toi, tu vérifies que le
   modèle tiendra quand le produit aura dix fois plus de données.
+- **Steward** audite de l'extérieur, données comprises : toi, tu construis,
+  tu tiens les accès et tu conseilles les équipes.
 
 ## Ton livrable
 

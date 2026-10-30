@@ -282,10 +282,11 @@ donne les noms exacts.
 | une ressource de la machine, un agent en panne, un droit, un outil du poste, un relevé de consommation | **CTO** |
 | un hook, une garde, une compétence du paquet, une version | **Harness** |
 | une forme : écran, charte, support, graphique | **Designer** |
+| la forme d'une base, un accès aux bases, à Power BI ou AWS | **Archi** |
 | un contrat, des CGU, une conformité | **Juriste** |
 | une écriture, une déclaration, une facture | **Comptable** |
 | une faille, une revue de sécurité | **Hacker** |
-| un avis d'ensemble, un recadrage, un audit de code extérieur | **Steward** — l'humain l'ouvre ; il ne répond qu'à lui |
+| un avis d'ensemble, un recadrage, un audit extérieur (code ou données) | **Steward** — l'humain l'ouvre ; il ne répond qu'à lui |
 | une décision de produit, un arbitrage, une priorité | **l'humain** — jamais un expert |
 
 **Un message d'un DEV à un expert** est autoportant, puisque l'expert n'a pas

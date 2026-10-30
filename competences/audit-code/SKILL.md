@@ -17,7 +17,8 @@ plus modifiés : la dette s'y cache. Écris en trois lignes ce que tu as compris
 
 ## 2. Demander ce qu'on audite
 
-Avec l'outil de questions (AskUserQuestion), en **un seul appel** :
+Avec l'outil de questions (AskUserQuestion), en **un seul appel** (deux si
+le projet a des données) :
 
 1. **Le but** (choix unique) : passer une revue de store (App Store, Play) ·
    avant une mise en production · réduire la dette · sécurité d'abord.
@@ -26,6 +27,10 @@ Avec l'outil de questions (AskUserQuestion), en **un seul appel** :
 3. **Ce qui coûte et ce qui expose** (choix multiples) : architecture et
    dette · dépendances et configuration · sécurité et données personnelles ·
    conformité au store ou à la plateforme.
+   Si le projet a des bases ou des tableaux de bord, ajoute une quatrième
+   question à choix multiples, **les données** : modèle et grain · requêtes ·
+   qualité des données · accès et chemin d'une donnée. Le périmètre se
+   demande alors dans un second appel, après ces réponses.
 4. **Le périmètre** (choix unique) : tout le dépôt · un module (à nommer) ·
    les changements depuis une date · un parcours d'utilisateur (à nommer).
 
@@ -49,6 +54,10 @@ montre ; aucun constat sans preuve ». Ils lisent, ils n'écrivent rien.
 | Dépendances et configuration | failles connues (`npm audit`, `pip-audit`), dépendances inutiles ou en double, variables d'environnement non documentées, versions incohérentes |
 | Sécurité et données personnelles | secrets en dur, SQL par concaténation, entrées non validées, droits trop larges, données personnelles journalisées ou envoyées sans besoin |
 | Conformité store / plateforme | voir § 4 |
+| Modèle et grain | une ligne = quoi ? clés et contraintes absentes, tables qui mélangent deux grains, indicateurs calculés à un grain faux |
+| Requêtes | jointures qui dupliquent, filtres oubliés, agrégats sur des valeurs nulles, requêtes lentes sur les volumes réels |
+| Qualité des données | doublons, trous, valeurs hors bornes, écarts entre la source et ce que montre le tableau de bord ; mesurés par requête, jamais supposés |
+| Accès et chemin | qui lit quoi, droits trop larges, données personnelles exposées ; le trajet d'une donnée de sa saisie au tableau de bord |
 
 ## 4. Si c'est une app mobile soumise à un store
 
@@ -71,6 +80,14 @@ Ce qui fait refuser une app, à vérifier dans le code et la configuration :
 Les règles des stores changent : vérifie chaque point contre leur version du
 jour avant de l'affirmer. Lis aussi le savoir-faire `ios` ou `android` s'il
 est branché.
+
+## 4 bis. Si l'audit touche les données
+
+Lecture seule, toujours : des `SELECT` bornés (`LIMIT`, filtres de date),
+jamais d'écriture ni de requête lourde sans l'accord de l'humain ; la
+Production se lit seulement si l'humain l'a dit pour cet audit. Aucune valeur
+de donnée personnelle dans le rapport : des comptes et des formes, pas des
+lignes.
 
 ## 5. Vérifier, puis rendre
 
