@@ -44,6 +44,13 @@ Chacun reçoit : le périmètre, la grille de sa dimension (ci-dessous), la règ
 « chaque constat cite `fichier:ligne` et la commande ou la lecture qui le
 montre ; aucun constat sans preuve ». Ils lisent, ils n'écrivent rien.
 
+**Le modèle de chaque sous-agent**, par exception à la règle commune
+(« sous-agents en Sonnet ») : **Opus** pour bogues et plantages, sécurité et
+données personnelles, conformité store, et les quatre dimensions des données
+— là où un bogue manqué ne se rattrape pas, puisque tu ne vérifies que ce
+qu'on te remonte ; **Sonnet** pour tests, performance, erreurs et journaux,
+architecture, dépendances et documentation. Toi, tu relis et tu tranches.
+
 | Dimension | Ce qu'on cherche |
 |---|---|
 | Bogues et plantages | chemins qui lèvent une exception non rattrapée, valeurs nulles, courses, états impossibles, démarrage à froid, hors ligne, petits et grands écrans |

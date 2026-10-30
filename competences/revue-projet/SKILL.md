@@ -10,7 +10,8 @@ recommandes ; l'humain décide.
 
 ## 1. S'orienter (avant toute question)
 
-Lis la dernière revue de ce projet s'il y en a une, puis : le cap, les
+Lis toi-même, sans sous-agent : le jugement se forme à la lecture. La
+dernière revue de ce projet s'il y en a une, puis : le cap, les
 décisions datées, l'état et la todo de chaque agent, le plan de chantier,
 `git log --oneline -50` de la mémoire. Écris en trois lignes ce que tu as
 compris du projet et où il en est.
@@ -49,8 +50,9 @@ Pour chaque critique, **une autre voie**, la plus simple qui tienne.
 
 ## 4. Douter avant de rendre
 
-Donne chaque point, sans ton raisonnement, à un sous-agent neuf chargé de le
-réfuter. Un point qu'il démonte et que tu ne peux pas défendre par une source
+Donne chaque point, sans ton raisonnement, à un sous-agent neuf **en Opus**
+(par exception à la règle commune : un contradicteur faible ne réfute rien),
+chargé de le réfuter. Un point qu'il démonte et que tu ne peux pas défendre par une source
 sort de la page.
 
 ## 5. Rendre
