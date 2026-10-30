@@ -31,7 +31,7 @@ transverse, qui sert l'atelier ou plusieurs projets (`METHODE.md`, § 2).
 | [`comptable`](comptable.md) | Expert | comptabilité et fiscalité d'une société | Opus |
 | [`hacker`](hacker.md) | Expert | sécurité offensive, en lecture | Opus |
 | [`archi`](archi.md) | Expert | architecture des données : modèle, chemin, qualité, accès | Opus |
-| [`steward`](steward.md) | Expert | le regard extérieur sur un projet : cap, fondations, équipe, risques | Fable |
+| [`steward`](steward.md) | Expert | le regard extérieur sur un projet : revue d'ensemble et audit de code | Fable |
 
 ## Comment une fiche est faite
 
@@ -52,6 +52,8 @@ modele: opus[1m]            # posé à chaque relance de l'agent
 effort: high
 competences:                # chemins sous ~/.claude-competences/, rafraîchis chaque lundi
   - corey-haines/skills/copywriting
+competences-atelier:        # savoir-faire écrits ici, sous competences/ (facultatif)
+  - competences/revue-projet
 env:                        # variables ajoutées aux réglages de l'agent
   HARNAIS_PROFIL: expert
 ---
@@ -61,6 +63,11 @@ Les savoir-faire **communs à tous** (visualisation de données, design
 d'interface, tests, ceux de la stack de vos projets…) vivent dans
 `~/.claude/skills/` : une fiche ne liste que ceux qui sont propres à son
 métier.
+
+Quand aucun dépôt public ne porte le savoir-faire voulu, on l'écrit ici,
+dans `competences/<nom>/SKILL.md`, et la fiche le cite sous
+`competences-atelier`. Aujourd'hui : `revue-projet` et `audit-code`
+(Steward).
 
 ## D'où viennent les savoir-faire
 
