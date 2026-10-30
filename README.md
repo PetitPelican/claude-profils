@@ -30,8 +30,6 @@ transverse, qui sert l'atelier ou plusieurs projets (`METHODE.md`, § 2).
 | [`juriste`](juriste.md) | Expert | droit français et européen d'une société | Opus |
 | [`comptable`](comptable.md) | Expert | comptabilité et fiscalité d'une société | Opus |
 | [`hacker`](hacker.md) | Expert | sécurité offensive, en lecture | Opus |
-| [`archi`](archi.md) | Expert | architecture des données : modèle, chemin, qualité, accès | Opus |
-| [`steward`](steward.md) | Expert | le regard extérieur sur un projet : revue d'ensemble et audit de code | Fable |
 
 ## Comment une fiche est faite
 
@@ -66,8 +64,26 @@ métier.
 
 Quand aucun dépôt public ne porte le savoir-faire voulu, on l'écrit ici,
 dans `competences/<nom>/SKILL.md`, et la fiche le cite sous
-`competences-atelier`. Aujourd'hui : `revue-projet` et `audit-code`
-(Steward).
+`competences-atelier`. Aujourd'hui : `audit` (QA, avec ses experts, ci-dessous),
+`revue-projet` et `audit-code` (une revue d'ensemble ou un audit de code
+lancé à la demande).
+
+## L'audit de QA et ses experts
+
+« Lance un audit » : le savoir-faire `competences/audit` demande la section —
+**Sécurité, Fiabilité, Qualité, Stores, Architecture**, calées sur les
+caractéristiques de l'ISO 25010 et les piliers d'AWS —, pose les questions à
+choix multiples de cette section (volets, pourquoi, combien d'experts, sur
+quoi), puis ne lance que les experts choisis.
+
+Les 19 experts sont des sous-agents, dans `agents/audit/` : un fichier par
+expert, en lecture seule, en Fable (exception à la règle commune des
+sous-agents, à faire accorder par l'humain), chacun avec ses savoir-faire
+préchargés. Ils sont écrits pour une pile Supabase, Next.js, Expo et Stripe :
+à adapter ailleurs. Pour les poser chez un QA : copier `agents/audit/*.md`
+dans le `.claude/agents/` de son dossier, et y lier les savoir-faire que
+leurs en-têtes nomment (`skills:`), depuis `~/.claude-competences/` ou
+`~/.claude/skills/`. L'outil des profils ne pose pas encore les sous-agents.
 
 ## D'où viennent les savoir-faire
 
@@ -77,16 +93,15 @@ intégrale de chaque fiche, au plus 10 par profil.
 
 | Dépôt | Étoiles (14/10) | Licence | Profils |
 |---|---|---|---|
-| `obra/superpowers` | 299 k | MIT | ops, po, qa, dev, cto, harness, steward |
-| `addyosmani/agent-skills` | 107 k | MIT | ops, po, qa, dev, hacker, cto, harness, steward |
-| `wshobson/agents` | 41 k | MIT | ops, hacker, archi |
-| `anthropics/knowledge-work-plugins` | 30 k | Apache-2.0 | po, dev, archi, steward |
-| `ancoleman/ai-design-components` | 525 (27/10) | MIT | archi (`architecting-data` seule ; dernier envoi le 10/12/2025) |
-| `trailofbits/skills` | 7,5 k | CC-BY-SA-4.0 | hacker |
-| `coreyhaines31/marketingskills` | 55 k | MIT | designer |
-| `ehmo/platform-design-skills` | 625 (26/10) | MIT | designer (la fiche iPad seule, `ipados`) |
+| `obra/superpowers` | 299 k | MIT | ops, po, qa, dev, cto, harness |
+| `addyosmani/agent-skills` | 107 k | MIT | ops, po, qa, dev, hacker, cto, harness |
+| `wshobson/agents` | 41 k | MIT | ops, hacker, qa (experts de l'audit) |
+| `anthropics/knowledge-work-plugins` | 30 k | Apache-2.0 | po, dev, qa (experts de l'audit) |
+| `trailofbits/skills` | 7,5 k | CC-BY-SA-4.0 | hacker, qa (experts de l'audit) |
+| `coreyhaines31/marketingskills` | 55 k | MIT | designer, qa (fiche de store) |
+| `ehmo/platform-design-skills` | 625 (26/10) | MIT | designer (la fiche iPad seule, `ipados`), qa (iOS et Android) |
 | `romainsimon/paperasse` | — | — | comptable |
-| `Tough-Respawn/legal-skills-france` | — | MIT | juriste |
+| `Tough-Respawn/legal-skills-france` | — | MIT | juriste, qa (données personnelles) |
 
 **Écartés après lecture** (ne pas rebrancher sans relire) : `ci-cd-and-automation`
 (commits, déploiements et fusions automatiques), `spec-driven-development` (arrêt
@@ -97,7 +112,7 @@ tiers), `incremental-implementation` (un commit par tranche),
 `incident-runbook-templates` (commandes de production étrangères à l'atelier),
 l'extension `claude-security` d'Anthropic (jusqu'à des centaines de sous-agents
 par analyse, `git` pré-autorisé), `feature-dev` et `pr-review-toolkit`
-(sous-agents en parallèle à chaque étape) ; chez Trail of Bits, `differential-review` (bascule l'arbre de travail par `git checkout`), `audit-context-building` (un sous-agent par fonction), `entry-point-analyzer` et `agentic-actions-auditor` (hors du web et du mobile). Pour `archi` (27/10) : `data-quality-frameworks` de wshobson (fiche tronquée en son milieu, et elle fait installer Great Expectations), les fiches de `ancoleman` qui livrent des scripts (`using-relational-databases`, `transforming-data`, `ingesting-data`), et `dbt-labs/dbt-agent-skills` (747 ★, Apache-2.0, sérieux) **tant qu'aucun projet n'utilise dbt** — à brancher le jour où un projet l'adopte. `supply-chain-risk-auditor` est gardé : il envoie les NOMS des dépendances à des registres publics, jamais le code ni les constats.
+(sous-agents en parallèle à chaque étape) ; chez Trail of Bits, `differential-review` (bascule l'arbre de travail par `git checkout`), `audit-context-building` (un sous-agent par fonction), `entry-point-analyzer` et `agentic-actions-auditor` (hors du web et du mobile). Pour l'architecture des données (27/10) : `data-quality-frameworks` de wshobson (fiche tronquée en son milieu, et elle fait installer Great Expectations), les fiches de `ancoleman` qui livrent des scripts (`using-relational-databases`, `transforming-data`, `ingesting-data`), et `dbt-labs/dbt-agent-skills` (747 ★, Apache-2.0, sérieux) **tant qu'aucun projet n'utilise dbt** — à brancher le jour où un projet l'adopte. `supply-chain-risk-auditor` est gardé : il envoie les NOMS des dépendances à des registres publics, jamais le code ni les constats.
 
 Les consignes de l'atelier passent avant celles d'un savoir-faire.
 

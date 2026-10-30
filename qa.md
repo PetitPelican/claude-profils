@@ -10,6 +10,8 @@ competences:
   - osmani/skills/test-driven-development
   - osmani/skills/planning-and-task-breakdown
   - osmani/skills/documentation-and-adrs
+competences-atelier:
+  - competences/audit
 env: {}
 ---
 

@@ -58,7 +58,7 @@ l'étage 2** : tous les agents se croiraient CTO.
 | lit | son projet | tout l'atelier, selon ses droits |
 | écrit | son lot, sa copie du code | son dossier ; dans un projet servi, **son carnet seulement** |
 | se monte par | `harnais adopte --equipe` | `harnais adopte` dans son dossier, puis sa fiche importée |
-| fiches | `ops` `po` `qa` `dev` `bi` | `cto` `harness` `designer` `juriste` `comptable` `hacker` `archi` |
+| fiches | `ops` `po` `qa` `dev` `bi` | `cto` `harness` `designer` `juriste` `comptable` `hacker` |
 
 **Attention au mot « expert », il sert deux fois.** La famille ci-dessus est
 une question de **place** (qui sert qui). La variable `HARNAIS_PROFIL=expert`
@@ -74,7 +74,7 @@ mais un développeur par sa mémoire** (il code le paquet) : pas de variable.
    leurs ressources) et les communs ; Harness tient le paquet que chargent tous
    les agents. **Le CTO s'occupe des agents, jamais de leur projet** : une
    question de produit qu'on lui adresse repart vers l'humain.
-2. **Les métiers avec session — Designer, Juriste, Comptable, Hacker, Steward.** Un
+2. **Les métiers avec session — Designer, Juriste, Comptable, Hacker.** Un
    agent complet, avec sa mémoire, qui sert plusieurs projets.
 3. **Les métiers sans session** — un rôle et un fil dans le projet, convoqués
    en sous-agent à la demande : aucun coût au repos (§ 4.3). À préférer quand
@@ -282,11 +282,11 @@ donne les noms exacts.
 | une ressource de la machine, un agent en panne, un droit, un outil du poste, un relevé de consommation | **CTO** |
 | un hook, une garde, une compétence du paquet, une version | **Harness** |
 | une forme : écran, charte, support, graphique | **Designer** |
-| la forme d'une base, un accès aux bases, à Power BI ou AWS | **Archi** |
+| la forme d'une base, sa qualité, sa dette | **QA** — l'audit, section Architecture ou Fiabilité |
 | un contrat, des CGU, une conformité | **Juriste** |
 | une écriture, une déclaration, une facture | **Comptable** |
 | une faille, une revue de sécurité | **Hacker** |
-| un avis d'ensemble, un recadrage, un audit extérieur (code ou données) | **Steward** — l'humain l'ouvre ; il ne répond qu'à lui |
+| un audit (sécurité, fiabilité, qualité, stores, architecture) | **QA** — « lance un audit », ses experts en sous-agents |
 | une décision de produit, un arbitrage, une priorité | **l'humain** — jamais un expert |
 
 **Un message d'un DEV à un expert** est autoportant, puisque l'expert n'a pas
