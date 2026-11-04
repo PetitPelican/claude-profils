@@ -27,6 +27,7 @@ transverse, qui sert l'atelier ou plusieurs projets (`METHODE.md`, § 2).
 | [`cto`](cto.md) | Expert | la machine, les agents et les communs | Opus |
 | [`harness`](harness.md) | Expert | le paquet du harnais | Opus |
 | [`designer`](designer.md) | Expert | identité, interfaces, supports, données | Opus |
+| [`editeur`](editeur.md) | Expert | le gardien d'un site : relecture et mise en ligne | Opus |
 | [`juriste`](juriste.md) | Expert | droit français et européen d'une société | Opus |
 | [`comptable`](comptable.md) | Expert | comptabilité et fiscalité d'une société | Opus |
 | [`hacker`](hacker.md) | Expert | sécurité offensive, en lecture | Opus |
@@ -66,7 +67,8 @@ Quand aucun dépôt public ne porte le savoir-faire voulu, on l'écrit ici,
 dans `competences/<nom>/SKILL.md`, et la fiche le cite sous
 `competences-atelier`. Aujourd'hui : `audit` (QA, avec ses experts, ci-dessous),
 `revue-projet` et `audit-code` (une revue d'ensemble ou un audit de code
-lancé à la demande).
+lancé à la demande), `edition-site` (l'Éditeur, d'un brouillon à la page en
+ligne).
 
 ## L'audit de QA et ses experts
 
@@ -98,7 +100,9 @@ intégrale de chaque fiche, au plus 10 par profil.
 | `wshobson/agents` | 41 k | MIT | ops, hacker, qa (experts de l'audit) |
 | `anthropics/knowledge-work-plugins` | 30 k | Apache-2.0 | po, dev, qa (experts de l'audit) |
 | `trailofbits/skills` | 7,5 k | CC-BY-SA-4.0 | hacker, qa (experts de l'audit) |
-| `coreyhaines31/marketingskills` | 55 k | MIT | designer, qa (fiche de store) |
+| `coreyhaines31/marketingskills` | 55 k | MIT | designer, editeur, qa (fiche de store) |
+| `docwriter-org/plain-writing-skill` | — | MIT | editeur |
+| `mattpocock/skills` | — | MIT | editeur (`grill-me`) |
 | `ehmo/platform-design-skills` | 625 (26/10) | MIT | designer (la fiche iPad seule, `ipados`), qa (iOS et Android) |
 | `romainsimon/paperasse` | — | — | comptable |
 | `Tough-Respawn/legal-skills-france` | — | MIT | juriste, qa (données personnelles) |
