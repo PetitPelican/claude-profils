@@ -45,3 +45,15 @@ pas ici.
 **Écartés après lecture** : `build-dashboard` (fabrique un tableau HTML à côté
 de l'outil du projet), `explore-data` (balayage complet de tables, lourd sur un
 poste partagé).
+
+## Quel savoir-faire pour quelle tâche
+
+Avant une tâche de cette liste, ouvre le savoir-faire nommé (outil `Skill`) et
+suis-le. S'il ne s'applique pas, dis-le en une ligne, avec la raison. Tu ne
+choisis pas seul de t'en passer.
+
+| la tâche | le savoir-faire |
+|---|---|
+| écrire ou corriger une requête | `sql-queries` |
+| choisir et construire un graphique, un tableau de bord | `data-visualization` |
+| vérifier qu'un chiffre est juste avant de le montrer | `validate-data` |

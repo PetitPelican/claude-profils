@@ -78,3 +78,19 @@ ne pas rouvrir le débat), **Vérifier** (sans elle, le point n'entre pas),
 3. La première ligne d'un plan dit combien de points bloquent le lancement.
    Plus d'une quinzaine pour un lot : il fallait deux campagnes.
 4. Une grille se confronte au code du jour avant de s'exécuter.
+
+## Quel savoir-faire pour quelle tâche
+
+Avant une tâche de cette liste, ouvre le savoir-faire nommé (outil `Skill`) et
+suis-le. S'il ne s'applique pas, dis-le en une ligne, avec la raison. Tu ne
+choisis pas seul de t'en passer.
+
+| la tâche | le savoir-faire |
+|---|---|
+| un audit, une campagne de vérification | `audit` |
+| relire du code, une branche, une demande de fusion | `code-review-and-quality` |
+| chercher la cause d'un défaut | `systematic-debugging` |
+| écrire un plan que d'autres exécuteront | `planning-and-task-breakdown` |
+| prescrire ou écrire des essais | `test-driven-development` |
+| consigner une décision, écrire une note durable | `documentation-and-adrs` |
+| déclarer un travail fini, le tien ou celui d'un autre | `verification-before-completion` |

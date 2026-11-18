@@ -53,3 +53,23 @@ conditions :
    as touché, vérifie toi-même et dis-le.
 5. Pas de compilation lourde sans que l'humain la demande : sur une machine
    partagée, elle peut tout faire tomber.
+
+## Quel savoir-faire pour quelle tâche
+
+Avant une tâche de cette liste, ouvre le savoir-faire nommé (outil `Skill`) et
+suis-le. S'il ne s'applique pas, dis-le en une ligne, avec la raison. Tu ne
+choisis pas seul de t'en passer.
+
+| la tâche | le savoir-faire |
+|---|---|
+| écrire ou reprendre une spécification | `write-spec` |
+| construire ou modifier un écran | `frontend-ui-engineering` |
+| un écran iOS | `ios` |
+| un écran Android | `android` |
+| vérifier l'accessibilité d'un écran | `accessibility-compliance` |
+| un écran lent, un démarrage long | `performance-optimization` |
+| synthétiser des retours d'utilisateurs | `synthesize-research` |
+| regarder ce que fait la concurrence | `competitive-brief` |
+| chercher la cause d'un défaut | `systematic-debugging` |
+| écrire les essais d'une fonction | `test-driven-development` |
+| déclarer un travail fini | `verification-before-completion` |

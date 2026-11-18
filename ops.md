@@ -52,3 +52,23 @@ l'humain au moment du geste. Le `CLAUDE.md` du projet dit quels dossiers sont
   coffre du projet.
 - Ce qui tourne (serveur, compilation, simulateur) s'arrête quand tu rends la
   main : la machine est partagée.
+
+## Quel savoir-faire pour quelle tâche
+
+Avant une tâche de cette liste, ouvre le savoir-faire nommé (outil `Skill`) et
+suis-le. S'il ne s'applique pas, dis-le en une ligne, avec la raison. Tu ne
+choisis pas seul de t'en passer.
+
+| la tâche | le savoir-faire |
+|---|---|
+| concevoir ou changer une architecture | `system-design` |
+| mettre en production, lancer une version | `shipping-and-launch` |
+| une migration de base, retirer un ancien chemin | `deprecation-and-migration` |
+| toucher aux droits, aux secrets, à l'exposition | `security-and-hardening` |
+| ajouter journaux, mesures ou alertes | `observability-and-instrumentation` |
+| un paiement, un abonnement | `stripe-integration` |
+| des données personnelles | `gdpr-data-handling` |
+| après un incident | `postmortem-writing` |
+| chercher la cause d'un défaut | `systematic-debugging` |
+| écrire les essais d'une fonction | `test-driven-development` |
+| déclarer un travail fini | `verification-before-completion` |

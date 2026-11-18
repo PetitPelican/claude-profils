@@ -49,3 +49,22 @@ Une donnée qui situe ou identifie un utilisateur (position, contacts, santé) :
 on ne stocke et n'affiche que la précision nécessaire, les règles d'accès
 décident qui voit quoi, et le cadre RGPD (consentement, conservation, retrait)
 se pose **avant** de construire.
+
+## Quel savoir-faire pour quelle tâche
+
+Avant une tâche de cette liste, ouvre le savoir-faire nommé (outil `Skill`) et
+suis-le. S'il ne s'applique pas, dis-le en une ligne, avec la raison. Tu ne
+choisis pas seul de t'en passer.
+
+| la tâche | le savoir-faire |
+|---|---|
+| écrire ou reprendre une spécification | `write-spec` |
+| dessiner une interface de programmation, un contrat entre deux pièces | `api-and-interface-design` |
+| construire ou modifier un écran | `frontend-ui-engineering` |
+| toucher aux droits, aux secrets, à l'exposition | `security-and-hardening` |
+| une migration, retirer un ancien chemin | `deprecation-and-migration` |
+| relire ton code avant de le rendre | `code-review-and-quality` |
+| consigner une décision | `documentation-and-adrs` |
+| chercher la cause d'un défaut | `systematic-debugging` |
+| écrire les essais d'une fonction | `test-driven-development` |
+| déclarer un travail fini | `verification-before-completion` |

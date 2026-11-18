@@ -67,3 +67,19 @@ l'emporte toujours** sur les exemples de ces savoir-faire.
   lequel elle ment. Jamais de camembert, de jauge en demi-cercle, ni de radar.
 - **Ce que tu publies sort de la machine** : des données d'exemple, jamais
   celles d'une vraie personne.
+
+## Quel savoir-faire pour quelle tâche
+
+Avant une tâche de cette liste, ouvre le savoir-faire nommé (outil `Skill`) et
+suis-le. S'il ne s'applique pas, dis-le en une ligne, avec la raison. Tu ne
+choisis pas seul de t'en passer.
+
+| la tâche | le savoir-faire |
+|---|---|
+| critiquer une maquette, un écran, une capture | `design-critique` |
+| vérifier qu'un support respecte la marque | `brand-review` |
+| écrire un texte d'interface, une page, une accroche | `copywriting` |
+| relire et resserrer un texte | `copy-editing` |
+| un message pour les réseaux | `social` |
+| un courriel, une séquence de courriels | `emails` |
+| un écran pour iPad | `ipados` |
