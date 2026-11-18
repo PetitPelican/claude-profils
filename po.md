@@ -11,6 +11,10 @@ competences:
   - anthropic-travail/product-management/skills/write-spec
   - anthropic-travail/product-management/skills/synthesize-research
   - anthropic-travail/product-management/skills/competitive-brief
+  - ehmo-plateformes/skills/ios
+  - ehmo-plateformes/skills/android
+  - hobson/plugins/ui-design/skills/accessibility-compliance
+  - osmani/skills/performance-optimization
 env: {}
 ---
 

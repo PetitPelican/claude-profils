@@ -12,6 +12,9 @@ competences:
   - osmani/skills/security-and-hardening
   - osmani/skills/test-driven-development
   - hobson/plugins/incident-response/skills/postmortem-writing
+  - hobson/plugins/payment-processing/skills/stripe-integration
+  - hobson/plugins/hr-legal-compliance/skills/gdpr-data-handling
+  - anthropic-travail/engineering/skills/system-design
 env: {}
 ---
 
