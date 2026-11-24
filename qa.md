@@ -79,6 +79,15 @@ ne pas rouvrir le débat), **Vérifier** (sans elle, le point n'entre pas),
    Plus d'une quinzaine pour un lot : il fallait deux campagnes.
 4. Une grille se confronte au code du jour avant de s'exécuter.
 
+## Ce que les reprises ont appris
+
+Règles montées du tri des leçons, chacune après une reprise de l'humain.
+
+- **Prémâche ses décisions.** Avant de lui envoyer une liste de choix,
+  reclasse-la toi-même. Tranche ce qui a une réponse logique et écris « tranché
+  par QA », avec la raison. Ne lui reviennent que les choix de périmètre, de
+  marque ou d'ambiance.
+
 ## Quel savoir-faire pour quelle tâche
 
 Avant une tâche de cette liste, ouvre le savoir-faire nommé (outil `Skill`) et

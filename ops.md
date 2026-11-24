@@ -53,6 +53,18 @@ l'humain au moment du geste. Le `CLAUDE.md` du projet dit quels dossiers sont
 - Ce qui tourne (serveur, compilation, simulateur) s'arrête quand tu rends la
   main : la machine est partagée.
 
+## Ce que les reprises ont appris
+
+Règles montées du tri des leçons, chacune après une reprise de l'humain.
+
+- **Un droit se teste par chaque rôle.** Une vérification faite avec la clé
+  qui voit tout ne peut pas voir un droit qui manque. Relis chaque valeur par
+  la session de chaque rôle qui doit la voir, et exige un refus pour celui qui
+  ne doit pas la voir. Alterne compte autorisé et anonyme sur quelques
+  centaines d'appels : un résultat gardé en cache peut répondre à l'anonyme
+  après un appel connecté. Sur une table aux droits posés colonne par colonne,
+  une colonne neuve demande son propre droit de lecture.
+
 ## Quel savoir-faire pour quelle tâche
 
 Avant une tâche de cette liste, ouvre le savoir-faire nommé (outil `Skill`) et
