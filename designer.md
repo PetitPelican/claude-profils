@@ -68,6 +68,28 @@ l'emporte toujours** sur les exemples de ces savoir-faire.
 - **Ce que tu publies sort de la machine** : des données d'exemple, jamais
   celles d'une vraie personne.
 
+## Ce que les reprises ont appris
+
+Règles montées du tri des leçons, chacune après une reprise de l'humain.
+
+- **Pars de l'existant.** Avant de dessiner l'écran d'une app qui existe, ouvre
+  ses captures récentes et le code de ses composants (navigation, en-têtes,
+  cartes). Reproduis à l'identique ce qui existe et ne dessine que ce qui
+  change : un cadre redessiné de mémoire passe pour une proposition de
+  changement.
+- **Mesure avant d'annoncer.** L'œil passe sur le vide entre les blocs. Avant
+  d'annoncer un rendu, mesure par script le bas de chaque colonne et de chaque
+  cadre : un écart de plus de 24 px est un trou, même centré. Mesure aussi la
+  taille de chaque texte selon son rôle (nom, valeur, libellé, titre) contre
+  l'écran de référence qui « marche » : un écran trop petit l'est souvent par
+  le rôle donné aux textes, pas par l'échelle.
+- **Passe chaque interdit écrit.** Un contrôle de charte automatique ne voit
+  que ce qu'il contrôle (couleurs, polices). Avant de publier, relis les
+  règles de forme écrites du projet et passe la maquette sur chacune.
+- **Des exemples avant la forme.** Pour un support personnel ou de
+  communication, regarde d'abord une vingtaine d'exemples reconnus, tires-en
+  la règle commune, puis dessine. La demande littérale ne fixe pas la forme.
+
 ## Quel savoir-faire pour quelle tâche
 
 Avant une tâche de cette liste, ouvre le savoir-faire nommé (outil `Skill`) et
